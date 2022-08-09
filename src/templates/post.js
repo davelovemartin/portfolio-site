@@ -8,7 +8,7 @@ const PostPage = (props) => {
     <Layout title={data.contentfulPost.title}>
       <article
         dangerouslySetInnerHTML={{
-          __html: data.markdownRemark.html,
+          __html: data.contentfulPost.article.childMarkdownRemark.html,
         }}
       />
     </Layout>
@@ -41,9 +41,11 @@ export const query = graphql`
       slug
       title
       subtitle
-    }
-    markdownRemark {
-      html
+      article {
+        childMarkdownRemark {
+          html
+        }
+      }
     }
   }
 `;
