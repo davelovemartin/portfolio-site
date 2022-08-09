@@ -37,9 +37,9 @@ const IndexPage = () => (
       at the same time.
     </p>
     <p>
-      Check out my <Link to="/resume/">resume</Link>, my{" "}
-      <Link to="/portfolio/">portfolio</Link> and my{" "}
-      <Link to="/journal/">journal</Link>.
+      Check out my <Link to="/resume/">Resumé</Link>, my{" "}
+      <Link to="/portfolio/">Portfolio</Link> and my{" "}
+      <Link to="/journal/">Journal</Link>.
     </p>
   </Layout>
 );
@@ -52,6 +52,7 @@ export const Head = ({ location, data }) => (
     <meta name="description" content={data.site.siteMetadata.description} />
     <meta name="twitter" content={data.site.siteMetadata.twitter} />
     <meta name="twitter:url" content={`${location.pathname}`} />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"></link>
   </>
 );
 

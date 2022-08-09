@@ -1,0 +1,203 @@
+:root {
+  /* colour palette */
+  --color-foreground: #f7f0f0;
+  --color-overground: #010101;
+  --color-background: #2c5364;
+  --color-incidental: #0cbaba;
+  --color-highlight: #ffa400;
+  --color-abstract: #ff495c;
+  --measure: 60ch; /*
+modular scale */
+  --ratio: 1.5;
+  --s0: 1rem;
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  max-inline-size: var(--measure);
+}
+body {
+  background-color: var(--color-overground);
+  color: var(--color-foreground);
+}
+html,
+body,
+div,
+header,
+nav,
+main,
+footer {
+  max-inline-size: none;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+p,
+li,
+dl {
+  max-width: var(--measure);
+}
+
+details,
+dd,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+hr,
+p,
+pre,
+table {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+blockquote {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+@font-face {
+  font-family: "pp_neue_montrealbook";
+  src: url("../fonts/ppneuemontreal-book-webfont.woff2") format("woff2"),
+    url("../fonts/ppneuemontreal-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pp_eiko_italiclight";
+  src: url("../fonts/ppeiko-lightitalic-webfont.woff2") format("woff2"),
+    url("../fonts/ppeiko-lightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "pp_eiko_italiclight", serif;
+  text-shadow: 0 1px 1px var(--color-background);
+}
+
+h1 {
+  letter-spacing: -2px;
+  line-height: 1.3333;
+  font-size: var(--s2);
+  word-spacing: 0.2em;
+}
+
+h1 + p {
+  margin-top: -1.5rem;
+}
+
+h2 {
+  font-size: var(--s1);
+  word-spacing: 0.1em;
+}
+
+h2 + p {
+  margin-top: -1.5rem;
+}
+
+blockquote {
+  font-family: "pp_neue_montrealbook", serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+p,
+a,
+li,
+small,
+input,
+button,
+label {
+  font-family: "pp_neue_montrealbook", sans-serif;
+  font-size: var(--s0);
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #ffcc00, #4fc6bc, #cf72b9);
+  background-image: -moz-linear-gradient(left, #ffcc00, #4fc6bc, #cf72b9);
+  background-image: -ms-linear-gradient(left, #ffcc00, #4fc6bc, #cf72b9);
+  background-image: -o-linear-gradient(left, #ffcc00, #4fc6bc, #cf72b9);
+  margin-bottom: 4rem;
+  margin-top: calc(1.5rem - 1px);
+}
+
+a {
+  color: var(--color-highlight);
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  transition: color 0.1s ease;
+}
+nav a,
+li a {
+  color: var(--color-forground);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-incidental);
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+a:active {
+  color: var(--color-highlight);
+  text-decoration: underline;
+}
+a:focus {
+  color: var(--color-highlight);
+  text-decoration: underline;
+}

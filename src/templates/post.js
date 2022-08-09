@@ -23,6 +23,7 @@ export const Head = ({ location, data }) => (
     <meta name="description" content={data.site.siteMetadata.description} />
     <meta name="twitter" content={data.site.siteMetadata.twitter} />
     <meta name="twitter:url" content={`${location.pathname}`} />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"></link>
   </>
 );
 
