@@ -1,20 +1,30 @@
+require("dotenv").config();
+
 module.exports = {
   siteMetadata: {
-    title: `portfolio-site`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `davelovemartin`,
+    siteUrl: `https://www.davelovemartin.com`,
+    twitter: `https://www.twitter.com/davelovemartin`,
   },
-  plugins: [{
-    resolve: 'gatsby-source-contentful',
-    options: {
-      "accessToken": "bced456d310144321e4c525c39a5213de96ee3900d6d516d8a6281e01c4703b8",
-      "spaceId": ""
-    }
-  }, "gatsby-plugin-sass", "gatsby-transformer-remark", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
+  plugins: [
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || "",
+        spaceId: process.env.CONTENTFUL_SPACE_ID || "",
+      },
     },
-    __key: "pages"
-  }]
+    "gatsby-plugin-sass",
+    "gatsby-transformer-remark",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-image",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: "./src/pages/",
+      },
+      __key: "pages",
+    },
+  ],
 };
