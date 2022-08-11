@@ -1,0 +1,14 @@
+.logo {
+  a svg {
+    width: 1.5rem;
+
+    fill: var(--color-foreground);
+    &:hover {
+      fill: var(--color-incidental);
+    }
+  }
+
+  a img {
+    width: 9rem;
+  }
+}

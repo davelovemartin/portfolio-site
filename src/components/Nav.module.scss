@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-block-start: 0;
+
+  div {
+    display: inline-flex;
+    gap: var(--s1);
+  }
+}

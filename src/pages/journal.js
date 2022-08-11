@@ -1,19 +1,28 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 import { Link, graphql } from "gatsby";
+import Stack from "../components/Stack";
+import Box from "../components/Box";
+import UnmarkedList from "../components/UnmarkedList";
 
 const JournalPage = (props) => {
   const { data } = props;
   return (
     <Layout title="Journal">
-      <li>
-        {data.allContentfulPost.edges.map(({ node }) => (
-          <Link to={`/journal/${node.slug}`}>
-            <h2>{node.title}</h2>
-            <p>{node.description}</p>
-          </Link>
-        ))}
-      </li>
+      <UnmarkedList>
+        <Stack>
+          {data.allContentfulPost.edges.map(({ node }) => (
+            <li key={node.id}>
+              <Box>
+                <Link to={`/journal/${node.slug}`}>
+                  <h2>{node.title}</h2>
+                  <p>{node.description}</p>
+                </Link>
+              </Box>
+            </li>
+          ))}
+        </Stack>
+      </UnmarkedList>
     </Layout>
   );
 };
@@ -43,6 +52,7 @@ export const query = graphql`
     allContentfulPost {
       edges {
         node {
+          id
           slug
           title
           description

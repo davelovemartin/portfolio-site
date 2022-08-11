@@ -1,17 +1,21 @@
 import * as React from "react";
+import Center from "./Center";
+import * as styles from "./Intro.module.scss";
 
 const Intro = (props) => {
   const { title, subtitle } = props;
   if (subtitle)
     return (
-      <div>
+      <div className={styles.intro}>
         <h1>{title}</h1>
         <p>{subtitle}</p>
       </div>
     );
   return (
-    <div>
-      <h1>{title}</h1>
+    <div className={styles.intro}>
+      <Center>
+        <h1>{title}</h1>
+      </Center>
     </div>
   );
 };

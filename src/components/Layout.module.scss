@@ -8,12 +8,14 @@
   --color-abstract: #ff495c;
   --measure: 60ch; /*
 modular scale */
+  --space: 1.5rem;
   --ratio: 1.5;
   --s0: 1rem;
   --s-1: calc(var(--s0) / var(--ratio));
   --s1: calc(var(--s0) * var(--ratio));
   --s2: calc(var(--s1) * var(--ratio));
   --s3: calc(var(--s2) * var(--ratio));
+  --border-thin: 0.125rem;
 }
 
 *,
@@ -157,6 +159,7 @@ blockquote {
 p,
 a,
 li,
+span,
 small,
 input,
 button,

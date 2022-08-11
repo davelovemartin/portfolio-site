@@ -2,29 +2,36 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import UnmarkedList from "../components/UnmarkedList";
+import Stack from "../components/Stack";
+import Box from "../components/Box";
 
 const PortfolioPage = (props) => {
   const { data } = props;
   return (
     <Layout title="Portfolio">
-      <ul>
-        {data.allContentfulProject.edges.map(({ node }) => (
-          <li key={node.id}>
-            <h2>{node.title}</h2>
-            <GatsbyImage
-              image={getImage(node.image)}
-              alt={"Mock up of " + node.title}
-              loading="lazy"
-            />
-            <div
-              dangerouslySetInnerHTML={{
-                __html: node.detail.childMarkdownRemark.html,
-              }}
-            />
-            <hr />
-          </li>
-        ))}
-      </ul>
+      <UnmarkedList>
+        <Stack>
+          {data.allContentfulProject.edges.map(({ node }) => (
+            <li key={node.id}>
+              <Box>
+                <h2>{node.title}</h2>
+                <GatsbyImage
+                  image={getImage(node.image)}
+                  alt={"Mock up of " + node.title}
+                  loading="lazy"
+                />
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: node.detail.childMarkdownRemark.html,
+                  }}
+                />
+                <hr />
+              </Box>
+            </li>
+          ))}
+        </Stack>
+      </UnmarkedList>
     </Layout>
   );
 };

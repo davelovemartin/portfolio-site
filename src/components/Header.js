@@ -1,4 +1,9 @@
 import * as React from "react";
-const Header = ({ children }) => <header>{children}</header>;
+
+import * as styles from "./Header.module.scss";
+
+const Header = ({ children }) => (
+  <header className={styles.header}>{children}</header>
+);
 
 export default Header;

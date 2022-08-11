@@ -1,10 +1,11 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
+import UnmarkedList from "../components/UnmarkedList";
 
 const ResumePage = () => (
   <Layout title="Resumé">
-    <ul>
+    <UnmarkedList>
       <li>
         <h2>Lead DesignOps &amp; Creative Technologist - Immersive Labs</h2>
         <p>Oct 2021 - Present</p>
@@ -18,10 +19,8 @@ const ResumePage = () => (
         <h2>Senior Frontend Engineer - Statsbomb</h2>
         <p>Jul 2021 - Oct 2021</p>
         <ul>
-          <li>
-            Created data visualisations for a React application. Head hunted by
-            Immersive Labs.
-          </li>
+          <li>Created data visualisations for a React application.</li>
+          <li>Head hunted by Immersive Labs.</li>
         </ul>
       </li>
       <li>
@@ -106,7 +105,7 @@ const ResumePage = () => (
         <p>
           I took a career break and took courses in Project Management, LEAN Six
           Sigma and a Foundation Degree in Internet Studies. I then went to the
-          University of the West of England, Bristol where I acheived a First in
+          University of the West of England, Bristol where I acheived a first in
           Web Design BSc (Hons).
         </p>
         <p>
@@ -116,8 +115,8 @@ const ResumePage = () => (
         </p>
         <p>
           I became a Peer Assisted Learner - mentoring students in the year
-          below. Later, I became an associate lecturer and ran a short-course
-          coding bootcamp.
+          below. I used the skills I learned here when I became an associate
+          lecturer and ran a short-course coding bootcamp.
         </p>
         <p>
           The university also supported me through their Student Enterprise
@@ -141,7 +140,7 @@ const ResumePage = () => (
           providing insight to business analysts and management accountants.
         </p>
         <p>
-          During my time at Lloyds, I used LEAN process improvement methods to
+          During my time at Lloyds, I used Lean process improvement methods to
           optimise our teams' work and Visual Basic skills to automate manual
           processes in Excel.
         </p>
@@ -155,12 +154,12 @@ const ResumePage = () => (
         <h2>Various</h2>
         <p>Jun 1997 - Sep 2007</p>
         <p>
-          Held a variety of both permanent and contract roles where I utilised
-          my abilty to create and automate spreadsheets. Employers included:
-          AXA, London Life, and Bristol City Council.
+          Held a variety of both permanent and contract roles where I excelled
+          creating and automating spreadsheets. Employers included: AXA, London
+          Life, and Bristol City Council.
         </p>
       </li>
-    </ul>
+    </UnmarkedList>
   </Layout>
 );
 
