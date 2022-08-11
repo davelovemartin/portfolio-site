@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { Link, graphql } from "gatsby";
 import Stack from "../components/Stack";
 import Box from "../components/Box";
+import Card from "../components/Card";
 import UnmarkedList from "../components/UnmarkedList";
 
 const JournalPage = (props) => {
@@ -12,14 +13,14 @@ const JournalPage = (props) => {
       <UnmarkedList>
         <Stack>
           {data.allContentfulPost.edges.map(({ node }) => (
-            <li key={node.id}>
-              <Box>
-                <Link to={`/journal/${node.slug}`}>
+            <Card key={node.id}>
+              <Link className="link" to={`/journal/${node.slug}`}>
+                <Box>
                   <h2>{node.title}</h2>
                   <p>{node.description}</p>
-                </Link>
-              </Box>
-            </li>
+                </Box>
+              </Link>
+            </Card>
           ))}
         </Stack>
       </UnmarkedList>

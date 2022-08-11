@@ -1,3 +1,6 @@
 .intro {
   margin-block: auto;
+  p + p {
+    margin-top: -3rem;
+  }
 }

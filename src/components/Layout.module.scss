@@ -6,7 +6,7 @@
   --color-incidental: #0cbaba;
   --color-highlight: #ffa400;
   --color-abstract: #ff495c;
-  --measure: 60ch; /*
+  --measure: 72ch; /*
 modular scale */
   --space: 1.5rem;
   --ratio: 1.5;
@@ -132,9 +132,8 @@ h3 {
 
 h1 {
   letter-spacing: -2px;
-  line-height: 1.3333;
-  font-size: var(--s2);
-  word-spacing: 0.2em;
+  line-height: 1.33333333;
+  font-size: var(--s3);
 }
 
 h1 + p {
@@ -142,7 +141,7 @@ h1 + p {
 }
 
 h2 {
-  font-size: var(--s1);
+  font-size: var(--s2);
   word-spacing: 0.1em;
 }
 
@@ -150,12 +149,19 @@ h2 + p {
   margin-top: -1.5rem;
 }
 
-blockquote {
+blockquote,
+blockquote p {
   font-family: "pp_neue_montrealbook", serif;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
+  font-style: italic;
+  font-size: var(--s2);
+  line-height: 1.33333333;
 }
+
+blockquote + p {
+  font-size: var(--s0);
+  line-height: 2.25;
+}
+
 p,
 a,
 li,
@@ -165,9 +171,40 @@ input,
 button,
 label {
   font-family: "pp_neue_montrealbook", sans-serif;
-  font-size: var(--s0);
+}
+
+code {
+  font-family: monospace;
+}
+
+p,
+a,
+li,
+span,
+small,
+input,
+button,
+label,
+code {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+}
+
+p,
+a,
+li,
+span,
+input,
+button,
+label,
+code {
+  font-size: var(--s1);
+}
+
+small,
+small a {
+  font-size: var(--s0);
+  line-height: 2.25;
 }
 hr {
   border: 0;
@@ -184,13 +221,32 @@ a {
   color: var(--color-highlight);
   text-decoration: underline;
   text-decoration-skip-ink: auto;
-  transition: color 0.1s ease;
+  transition: color 0.3s ease-in-out 0s;
 }
 nav a,
 li a {
   color: var(--color-forground);
   text-decoration: none;
 }
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+ul > li {
+  margin-block: 0;
+}
+
+ul > li + li {
+  margin-block-start: 1.5rem;
+}
+
+ul {
+  list-style-type: circle;
+}
+
 a:hover {
   color: var(--color-incidental);
   text-decoration: underline;
@@ -201,6 +257,8 @@ a:active {
   text-decoration: underline;
 }
 a:focus {
-  color: var(--color-highlight);
-  text-decoration: underline;
+  color: var(--color-foreground);
+  text-decoration: none;
+  outline: var(--color-foreground) solid 0.0625rem;
+  border-radius: 0.125rem;
 }

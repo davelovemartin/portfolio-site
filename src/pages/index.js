@@ -5,7 +5,10 @@ import { Link, graphql } from "gatsby";
 const IndexPage = () => (
   <Layout
     title="Hello, World!"
-    subtitle="I'm Dave Lovemartin, a Creative Technologist from Bristol, UK. I specialise in designing and developing hi-fidelity prototypes for usability testing."
+    subtitle={[
+      "I'm Dave Lovemartin, a Creative Technologist from Bristol, UK.",
+      "I specialise in designing and developing hi-fidelity prototypes for usability testing.",
+    ]}
   >
     <p>
       I've forged a career at the intersection of design and web development ✨
@@ -15,22 +18,23 @@ const IndexPage = () => (
       <a href="https://www.interaction-design.org/literature/article/a-simple-introduction-to-lean-ux">
         Lean UX
       </a>
-      , thriving in collaborative environments where my empathetic approach
-      brings out the best in my team.
+      , thriving in collaborative environments where my empathy helps bring out
+      the best in my team.
     </p>
     <p>
       As an experience designer, I've conducted user and stakeholder interviews,
       led ideation workshops and presented to clients.
     </p>
-    <p>
-      Flexing my Frontend Engineering skills, I pride myself on writing
-      well-formed semantic HTML, styling with CSS, and enhancing with JavaScript
-      (including React and Typescript).
-    </p>
-    <p>
-      I champion inclusive design and am always learning how to make the web
-      accessible.
-    </p>
+    <p>Flexing my Frontend Engineering skills, I pride myself on:</p>
+
+    <ul>
+      <li>writing well-formed semantic HTML,</li>
+      <li>styling with CSS (and Sass), and </li>
+      <li>
+        enhancing with JavaScript (including React and Typescript Frameworks).
+      </li>
+    </ul>
+    <p>I champion inclusive design and web accessibility.</p>
     <hr />
     <p>
       I love playing guitar, drinking good coffee and trail running... but not

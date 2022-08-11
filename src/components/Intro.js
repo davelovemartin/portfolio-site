@@ -8,7 +8,9 @@ const Intro = (props) => {
     return (
       <div className={styles.intro}>
         <h1>{title}</h1>
-        <p>{subtitle}</p>
+        {subtitle.map((paragraph) => (
+          <p>{paragraph}</p>
+        ))}
       </div>
     );
   return (

@@ -1,19 +1,20 @@
 import * as React from "react";
-import Box from "./Box";
 import Center from "./Center";
 
 import * as styles from "./Readmore.module.scss";
 
-const Readmore = () => (
-  <div className={styles.readmore}>
-    <Center>
-      <Box>
+const Readmore = (props) => {
+  const { children } = props;
+  return (
+    <div className={styles.readmore}>
+      <Center>
         <p>
-          read more <span>↓</span>
+          {children}
+          <span>↓</span>
         </p>
-      </Box>
-    </Center>
-  </div>
-);
+      </Center>
+    </div>
+  );
+};
 
 export default Readmore;

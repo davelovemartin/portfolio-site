@@ -28,17 +28,24 @@ const Footer = () => (
     <Center>
       <div class="h-card">
         <p>
-          <a href="https://www.davelovemartin.com" class="u-url" rel="me">
-            Dave Lovemartin
-          </a>{" "}
-          &copy; 2017 - 2022. Built with{" "}
-          <a target="__blank" href="https://facebook.github.io/react/">
-            React
-          </a>{" "}
-          &amp;{" "}
-          <a target="__blank" href="http://gatsbyjs.org/">
-            Gatsby.js
-          </a>
+          <small>
+            <a href="https://www.davelovemartin.com" class="u-url" rel="me">
+              Dave Lovemartin
+            </a>{" "}
+            &copy; 2017 - 2022.
+          </small>
+        </p>
+        <p>
+          <small>
+            Built with{" "}
+            <a target="__blank" href="https://facebook.github.io/react/">
+              React
+            </a>{" "}
+            &amp;{" "}
+            <a target="__blank" href="http://gatsbyjs.org/">
+              Gatsby.js
+            </a>
+          </small>
         </p>
       </div>
     </Center>

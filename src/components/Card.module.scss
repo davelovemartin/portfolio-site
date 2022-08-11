@@ -1,6 +1,5 @@
-.logo {
+.card {
   a {
-    padding: 0.75rem;
     display: block;
     outline: 0.0625rem solid transparent;
     outline-offset: -0.125rem;
@@ -9,18 +8,5 @@
     color: var(--color-foreground);
     outline: 0.0625rem solid var(--color-foreground);
     border-radius: 0.5rem;
-  }
-
-  a svg {
-    width: 1.5rem;
-
-    fill: var(--color-foreground);
-    &:hover {
-      fill: var(--color-incidental);
-    }
-  }
-
-  a img {
-    width: 9rem;
   }
 }
