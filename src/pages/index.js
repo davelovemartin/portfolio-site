@@ -26,7 +26,6 @@ const IndexPage = () => (
       led ideation workshops and presented to clients.
     </p>
     <p>Flexing my Frontend Engineering skills, I pride myself on:</p>
-
     <ul>
       <li>writing well-formed semantic HTML,</li>
       <li>styling with CSS (and Sass), and </li>

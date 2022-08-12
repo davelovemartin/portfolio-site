@@ -4,6 +4,18 @@
   flex-wrap: wrap;
   margin-block-start: 0;
 
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   > a {
     margin-left: -0.25rem;
   }
@@ -15,5 +27,6 @@
 
   a {
     padding: 0 0.25rem 0.125rem;
+    animation: 4s ease 0s normal forwards 1 fadein;
   }
 }

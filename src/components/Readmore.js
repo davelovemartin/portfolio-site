@@ -10,7 +10,7 @@ const Readmore = (props) => {
       <Center>
         <p>
           {children}
-          <span>↓</span>
+          <span>&#x21d3;</span>
         </p>
       </Center>
     </div>
