@@ -13,18 +13,7 @@
     }
   }
 
-  @keyframes bounce {
-    0% {
-      transform: translateY(-100%);
-    }
-    75% {
-      transform: translateY(-100%);
-    }
-    100% {
-      transform: translateY(0%);
-    }
-  }
   p {
-    animation: 4s ease 0s normal forwards 1 fadein;
+    animation: var(--timing-3) ease-in-out 0s normal forwards 1 fadein;
   }
 }

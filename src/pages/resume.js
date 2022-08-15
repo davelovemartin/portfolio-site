@@ -114,9 +114,7 @@ const ResumePage = () => (
           and agencies.
         </p>
         <p>
-          I became a Peer Assisted Learner - mentoring students in the year
-          below. I used the skills I learned here when I became an associate
-          lecturer and ran a short-course coding bootcamp.
+          I became an associate lecturer running a short-course coding bootcamp.
         </p>
         <p>
           The university also supported me through their Student Enterprise

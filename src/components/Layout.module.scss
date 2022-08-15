@@ -4,10 +4,10 @@
   --color-overground: #010101;
   --color-background: #2c5364;
   --color-incidental: #0cbaba;
-  --color-highlight: #ffa400;
+  --color-highlight: #ffaf1e;
   --color-abstract: #ff495c;
-  --measure: 60ch; /*
-modular scale */
+  --measure: 60ch;
+  /* modular scale */
   --space: 1.5rem;
   --ratio: 1.5;
   --s0: 1rem;
@@ -16,6 +16,12 @@ modular scale */
   --s2: calc(var(--s1) * var(--ratio));
   --s3: calc(var(--s2) * var(--ratio));
   --border-thin: 0.125rem;
+  /* timing */
+  --spacing: 1s;
+  --timing-0: 0.8s;
+  --timing-1: 1.6s;
+  --timing-2: 2s;
+  --timing-3: 3.2s;
 }
 
 *,
@@ -221,7 +227,7 @@ a {
   color: var(--color-highlight);
   text-decoration: underline;
   text-decoration-skip-ink: auto;
-  transition: color 0.3s ease-in-out 0s;
+  transition: color 0.1s ease-in-out 0s;
 }
 nav a,
 li a {

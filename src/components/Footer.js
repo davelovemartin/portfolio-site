@@ -23,6 +23,19 @@ const Footer = () => (
             </svg>
           </a>
         </Logo>
+        <Logo>
+          <a href="https://www.linkedin.com/in/davelovemartin" rel="me">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+              <g>
+                <path d="M0 18C0 8 8 0 19 0h218c11 0 19 8 19 18v220c0 10-8 18-19 18H19c-11 0-19-8-19-18V18z" />
+                <path
+                  d="M78 214V99H39v115h39zM59 83c13 0 21-9 21-20s-8-20-21-20-22 9-22 20 9 20 21 20h1zm40 131h38v-64l2-9c2-7 9-14 19-14 14 0 20 10 20 26v61h38v-66c0-35-19-52-44-52-21 0-30 12-35 20V99H99v115z"
+                  fill="#2c5364"
+                />
+              </g>
+            </svg>
+          </a>
+        </Logo>
       </Flex>
     </Center>
     <Center>
@@ -33,6 +46,11 @@ const Footer = () => (
               Dave Lovemartin
             </a>{" "}
             &copy; 2017 - 2022.
+          </small>
+        </p>
+        <p>
+          <small>
+            Image by <a href="https://unsplash.com/@dierken">@dierken</a>.
           </small>
         </p>
         <p>

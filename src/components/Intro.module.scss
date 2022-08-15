@@ -8,7 +8,7 @@
     0% {
       opacity: 0;
     }
-    66% {
+    75% {
       opacity: 0;
     }
     100% {
@@ -16,5 +16,8 @@
     }
   }
 
-  animation: 3s ease 0s normal forwards 1 fadein;
+  h1,
+  p {
+    animation: var(--timing-0) ease-in-out 0s normal forwards 1 fadein;
+  }
 }

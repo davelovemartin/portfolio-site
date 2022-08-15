@@ -16,10 +16,6 @@
     }
   }
 
-  > a {
-    margin-left: -0.25rem;
-  }
-
   div {
     display: inline-flex;
     gap: var(--s0);
@@ -27,6 +23,11 @@
 
   a {
     padding: 0 0.25rem 0.125rem;
-    animation: 4s ease 0s normal forwards 1 fadein;
+    animation: var(--timing-2) ease-in-out 0s normal forwards 1 fadein;
+  }
+
+  > a {
+    margin-left: -0.25rem;
+    animation: var(--timing-1) ease-in-out 0s normal forwards 1 fadein;
   }
 }

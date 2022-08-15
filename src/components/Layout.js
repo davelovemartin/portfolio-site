@@ -8,21 +8,24 @@ import Container from "./Container";
 
 import "./Layout.module.scss";
 import Readmore from "./Readmore";
+import Main from "./Main";
 
 const Layout = (props) => {
   const { children, title, subtitle } = props;
   return (
-    <Container>
-      <Header>
-        <Nav />
-        <Intro title={title} subtitle={subtitle} />
-        <Readmore />
-      </Header>
-      <main>
+    <>
+      <Container>
+        <Header>
+          <Nav />
+          <Intro title={title} subtitle={subtitle} />
+          <Readmore />
+        </Header>
+      </Container>
+      <Main>
         <Center>{children}</Center>
-      </main>
+      </Main>
       <Footer />
-    </Container>
+    </>
   );
 };
 
