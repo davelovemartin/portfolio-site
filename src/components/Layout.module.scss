@@ -117,23 +117,34 @@ blockquote {
   font-family: "pp_neue_montrealbook";
   src: url("../fonts/ppneuemontreal-book-webfont.woff2") format("woff2"),
     url("../fonts/ppneuemontreal-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "pp_eiko_italiclight";
-  src: url("../fonts/ppeiko-lightitalic-webfont.woff2") format("woff2"),
-    url("../fonts/ppeiko-lightitalic-webfont.woff") format("woff");
+  font-family: "pp_neue_montrealbook";
+  src: url("../fonts/ppneuemontreal-italic-webfont.woff2") format("woff2"),
+    url("../fonts/ppneuemontreal-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "pp_editorial_newitalic";
+  src: url("../fonts/ppeditorialnew-italic-webfont.woff2") format("woff2"),
+    url("../fonts/ppeditorialnew-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "pp_eiko_italiclight", serif;
+  font-family: "pp_editorial_newitalic", serif;
   text-shadow: 0 1px 1px var(--color-background);
 }
 
 h1 {
-  letter-spacing: -2px;
   line-height: 1.33333333;
   font-size: var(--s3);
 }
