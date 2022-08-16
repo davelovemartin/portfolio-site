@@ -5,6 +5,7 @@
     outline: 0.0625rem solid transparent;
     outline-offset: -0.125rem;
     transition: fill 0.1s ease-in-out 0s;
+    margin: 0 auto;
   }
   a:focus {
     color: var(--color-foreground);
@@ -22,6 +23,6 @@
   }
 
   a img {
-    width: 9rem;
+    width: 7.5rem;
   }
 }
