@@ -9,7 +9,6 @@ const Nav = () => (
     <div>
       <Link to="/journal">journal</Link>
       <Link to="/portfolio">portfolio</Link>
-      <Link to="/resume">resumé</Link>
     </div>
   </nav>
 );
