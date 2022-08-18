@@ -40,8 +40,7 @@ const IndexPage = () => (
       at the same time.
     </p>
     <p>
-      Check out my <Link to="/resume/">Resumé</Link>, my{" "}
-      <Link to="/portfolio/">Portfolio</Link> and my{" "}
+      Check out my <Link to="/portfolio/">Portfolio</Link> and my{" "}
       <Link to="/journal/">Journal</Link>.
     </p>
   </Layout>
